@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Dashboard - Cloud Kitchen</title>
+    <link rel="stylesheet" href="styles_c.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" id="menuLink">Menu</a>
+            <a href="#" id="popularLink">Popular Dishes</a>
+            <a href="#">Browse</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="mainContent">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cloud Kitchen</p>
+    </footer>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="dish">Dish:</label>
+                <input type="text" id="dish" name="dish" readonly>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">Order</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <label for="reviewDish">Dish:</label>
+                <input type="text" id="reviewDish" name="reviewDish" readonly>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+   
+
+    <script src="scripts_c.js"></script>
+</body>
+</html>

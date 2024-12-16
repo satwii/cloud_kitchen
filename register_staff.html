@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Register - Cloud Kitchen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)), url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #16a083;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 3rem auto;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        label {
+            display: block;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.4rem;
+        }
+
+        button {
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
+            border-radius: 50px;
+            cursor: pointer;
+            outline: none;
+            background: #16a083;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            border: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #117964;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 2rem;
+            background: rgb(65, 65, 65);
+            color: #fff;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Staff Register</h1>
+    </header>
+    <div class="container">
+        <form id="registerForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cloud Kitchen</p>
+    </footer>
+    <script src="scripts_s.js"></script>
+</body>
+</html>
